@@ -3,36 +3,36 @@ package level01;
 public class PrimeNumberCreat {
 
 	public int solution(int[] nums) {
-        int sum = 0;
-        boolean flag = false;
+		int answer = 0;
+		
+        boolean flag = true;
         
         for(int i = 0; i < nums.length; i++) {
         	for(int j = i + 1; j < nums.length; j++) {
         		for(int k = j + 1; k < nums.length; k++) {
-        			sum = (nums[i] + nums[j] + nums[k]);
+        			int sum = (nums[i] + nums[j] + nums[k]);
         			
         			if(sum >= 2) {
         				flag = primeCheck(sum);
         			}
-        			if(!flag) {
-        				sum++;
+        			if(flag == false) {
+        				answer++;
         			}
         		}
         	}
         }
 
-        return sum;
+        return answer;
     }
 	
 	public boolean primeCheck(int n) {
 		
-		for(int i = 1; i < n; i++) {
+		for(int i = 2; i < n; i++) {
 			
-			if(n % 1 == 0) {
+			if(n % i == 0) {
 				return true;
 			}
 		}
-		
 		return false;
 	}
 	
