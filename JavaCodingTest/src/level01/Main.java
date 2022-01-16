@@ -5,11 +5,12 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		PrimeNumberCreat primeNumberCreat = new PrimeNumberCreat();
+		InnerProduct innerProduct = new InnerProduct();
 		
-		int arr[] = {1,2,7,6,4};
+		int arr[] = {1,2,3,4};
+		int arr2[] = {-3,-1,0,2};
 		
-		System.out.println(primeNumberCreat.solution(arr));
+		System.out.println(innerProduct.solution(arr, arr2));
 	}
 
 }
