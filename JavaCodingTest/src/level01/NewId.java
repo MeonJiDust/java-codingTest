@@ -12,7 +12,7 @@ public class NewId {
         answer = new_id.toLowerCase();
         System.out.println("1" +  answer);
         
-        answer = answer.replaceAll("[^a-zA-Z0-9\\-\\_\\.]", "");
+        answer = answer.replaceAll("[^a-zA-Z0-9-_.]", "");
         System.out.println("2" + answer);
         
         while(true){
@@ -46,7 +46,7 @@ public class NewId {
         if(answer.length() >= 16) {
         	
         	for(int i = 15; i < answer.length(); i++) {
-        		
+        		System.out.println("여기야");
         		answer = answer.substring(0, i);
         	}
             if(answer.charAt(answer.length() - 1) == '.') {

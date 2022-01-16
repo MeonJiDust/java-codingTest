@@ -10,7 +10,7 @@ public class Main {
 		int arr[] = {1,2,3,4};
 		int arr2[] = {-3,-1,0,2};
 		
-		String idString = "z-+.^.";
+		String idString = "...!@BaT#*..y.abcdefghijklm";
 		
 		System.out.println(newId.solution(idString));
 	}
