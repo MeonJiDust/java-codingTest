@@ -10,9 +10,10 @@ public class NewId {
         char tmpS;
         
         answer = new_id.toLowerCase();
-        System.out.println(answer);
+        System.out.println("1" +  answer);
+        
         answer = answer.replaceAll("[^a-zA-Z0-9\\-\\_\\.]", "");
-        System.out.println(answer);
+        System.out.println("2" + answer);
         
         while(true){
         	
@@ -22,33 +23,56 @@ public class NewId {
         		break;
         	}
         }
-        System.out.println(answer);
+        System.out.println("3" + answer);
         
-        answer = answer.replaceFirst(".", "");
-        System.out.println(answer);
+        if(answer.charAt(0) == '.') {
+        	answer = answer.replaceFirst(".", "");
+        }
+        System.out.println("4" + answer);
         
-        if(answer.charAt(answer.length() - 1) == '.') {
+        if(answer.length() == 0) {
+        	answer = "a";
+        }
+        System.out.println("4" + answer);
+        
+    	if(answer.charAt(answer.length() - 1) == '.') {
         	
         	System.out.println("들어오");
         	//answer = answer.substring(0, answer.length() - 1);
         	answer = answer.replaceFirst(".$", "");
         }
-        System.out.println(answer);
+        System.out.println("5" + answer);
         
-        if(answer == "") {
-        	answer = "a";
-        }
-        
-        
-        for(int i = 0; i < new_id.length(); i++) {
+        if(answer.length() >= 16) {
         	
-        	tmpS = new_id.charAt(i);
-//        	if(!(tmpI >= 97 && tmpI <= 122) || !(tmpI >= 48 && tmpI <= 57) || (tmpI != 45) || (tmpI != 95) || (tmpI != 46)) {
-//        		new_id.charAt(i)
-//        	}
-        	//if(tmpS.)
-        	
+        	for(int i = 15; i < answer.length(); i++) {
+        		
+        		answer = answer.substring(0, i);
+        	}
+            if(answer.charAt(answer.length() - 1) == '.') {
+            	
+            	answer = answer.replaceFirst(".$", "");
+            }
         }
+        System.out.println("6" + answer);
+        
+        if(answer.length() <= 2) {
+        	
+        	char lastChar = answer.charAt(answer.length() - 1);
+        	
+        	while(true) {
+        		
+        		if(answer.length() < 3) {
+        			
+        			answer += lastChar;
+        		}else {
+        			break;
+        		}
+        	}
+        }
+        System.out.println("7" + answer);
+        
+
         return answer;
     }
 }
