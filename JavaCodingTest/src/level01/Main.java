@@ -5,14 +5,14 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		NewId newId = new NewId();
+		DidntFinshAthlete didntFinshAthlete = new DidntFinshAthlete();
 		
-		int arr[] = {1,2,3,4};
-		int arr2[] = {-3,-1,0,2};
+		String arr[] = {"mislav", "stanko", "mislav", "ana"};
+		String arr2[] = {"stanko", "ana", "mislav"};
 		
 		String idString = "...!@BaT#*..y.abcdefghijklm";
 		
-		System.out.println(newId.solution(idString));
+		System.out.println(didntFinshAthlete.solution(arr, arr2));
 	}
 
 }
