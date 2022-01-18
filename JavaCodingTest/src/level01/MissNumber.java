@@ -1,22 +1,27 @@
 package level01;
 
-import java.util.Arrays;
-
 public class MissNumber {
 
     public int solution(int[] numbers) {
-        int answer = 1;
+        int answer = 0;
         
-        Arrays.sort(numbers);
+        int arr[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        
+        for(int i = 0; i < numbers.length; i++) {
+        	
+        	for(int j = 0; j < 10; j++) {
+        		
+        		if(numbers[i] == j) {
+        			
+        			arr[j] =0;
+        			break;
+        		}
+        	}
+        }
         
         for(int i = 0; i < 10; i++) {
         	
-        	if(!Arrays.asList(numbers).contains(i)) {
-        		answer += numbers[i];
-        	}
-//        	if(i != numbers[i]) {
-//        		answer += numbers[i];
-//        	}
+        	answer += arr[i];
         }
         
         return answer;
