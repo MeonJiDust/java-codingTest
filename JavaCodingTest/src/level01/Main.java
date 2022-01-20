@@ -5,11 +5,11 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		MissNumber msMissNumber = new MissNumber();
+		FailureRate02 failureRate = new FailureRate02();
 		
-		int arr3[] = {1,2,3,4,6,7,8,0};
+		int arr3[] = {2, 1, 2, 6, 2, 4, 3, 3};
 		
-		System.out.println(msMissNumber.solution(arr3));
+		System.out.println(failureRate.solution(5, arr3));
 	}
 
 }
