@@ -17,7 +17,7 @@ public class FailureRate {
         	for(int j = 0; j < stages.length; j++) {
         		
         		if(i == stages[j]) {
-        			
+        			 
         			sum++;
         			count++;
         		}else {
