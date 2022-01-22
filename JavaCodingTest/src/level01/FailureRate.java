@@ -32,7 +32,7 @@ public class FailureRate {
     		}
     		
     		member -= count;
-    		sum = 0;
+    		sum = 0; 
     		count = 0;
         }
         
