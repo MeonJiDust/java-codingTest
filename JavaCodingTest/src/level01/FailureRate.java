@@ -25,7 +25,7 @@ public class FailureRate {
         		}
         	}
 
-    		if(sum == 0) {
+    		if(sum == 0) { 
     			map.put(i, 0.0);
     		}else {
     			map.put(i, ((double)sum / member * 100.0));
