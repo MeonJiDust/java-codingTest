@@ -33,7 +33,7 @@ public class FailureRate {
     		
     		member -= count;
     		sum = 0; 
-    		count = 0;
+    		count = 0; 
         }
         
         int arr[] = new int[map.size()];
