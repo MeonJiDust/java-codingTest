@@ -18,7 +18,7 @@ public class First_05 {
 			
 			if(count % 2 == 1) {
 				if(i_isTrue == true) {
-//					for(i = )
+//					for(i = ) 
 				}
 			}
 		}
