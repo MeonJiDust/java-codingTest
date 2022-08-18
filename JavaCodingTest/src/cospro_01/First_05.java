@@ -3,7 +3,7 @@ package cospro_01;
 public class First_05 {
 
 	public int solution(int n) {
-		
+		 
 		int answer = 0;
 		
 		int[][] arr = new int[n][n];
@@ -13,7 +13,7 @@ public class First_05 {
 		int number = 1;
 		boolean j_isTrue = true;
 		boolean i_isTrue = true;
-		
+		 
 		while(count != (n * 2) - 1) {
 			
 			if(count % 2 == 1) {
